@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Relative Unit Practice</title>
+
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Griffy&family=Nabla&family=Oswald:wght@200..700&display=swap");
+
+      h1 {
+        text-align: center;
+        text-decoration: dotted underline;
+        font-weight: 700;
+        font-family: "Griffy", system-ui;
+      }
+      p {
+        margin-left: 30px;
+
+        font-weight: 600;
+      }
+
+      /* ul {
+        margin-left: 60px;
+        font-size: large;
+        
+      } */
+      #lst-container {
+        height: 150px;
+        width: 400px;
+        padding-top: 15px;
+        background-color: rgb(24, 169, 162);
+        margin-left: 60px;
+        font-weight: 200;
+      }
+      li span {
+        font-style: normal;
+        font-weight: 800;
+        font-family: cursive;
+        text-decoration: dotted red underline;
+        margin-right: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Relative element exercise -->
+    <div>
+      <h1>Relative Element</h1>
+      <p>
+        Relative units are based on the size of the parent element or the
+        viewport. They allow for flexible and responsive designs that adapt to
+        different screen sizes and user preferences.
+      </p>
+    </div>
+    <div id="lst-container">
+      <ul>
+        <li>
+          <span>em:</span>Relative to the font size of the parent element.
+        </li>
+        <li>
+          <span>rem:</span>Relative to the font size of the root element (html).
+        </li>
+        <li><span>vw:</span>Relative to 1% of the viewport width.</li>
+        <li><span>vh:</span>Relative to 1% of the viewport height.</li>
+        <li><span>%:</span>Relative to the parent element's size.</li>
+      </ul>
+    </div>
+  </body>
+</html>
