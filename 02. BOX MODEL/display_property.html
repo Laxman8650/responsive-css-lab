@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Display Properties</title>
+    <style>
+      h2 {
+        color: red;
+        /* h1,h2 is block elements, but we define inline in display than these elements behave like inline elements */
+        display: inline;
+      }
+      h1 {
+        text-align: center;
+        text-decoration: dotted underline;
+        font-weight: 500;
+        font-family: cursive;
+      }
+      p {
+        margin-left: 30px;
+
+        font-weight: 600;
+      }
+
+      .list-container {
+        height: 150px;
+        width: 600px;
+        background-color: rgb(222, 160, 16);
+        margin-left: 100px;
+        padding-top: 15px;
+        list-style-position: inside;
+        font-size: large;
+        font-weight: bold;
+      }
+      .click {
+        display: block;
+      }
+      .box {
+        height: 100px;
+        width: 100px;
+        background-color: red;
+        display: inline-block;
+      }
+      #box1 {
+        margin: 10px;
+        padding: 10px;
+      }
+      #box2 {
+        margin: 10px;
+        padding: 10px;
+      }
+      .my-box {
+        height: 100px;
+        width: 100px;
+        background-color: pink;
+        display: inline-block;
+      }
+      /* For None(Hidden) */
+      /* #cont1 {
+        display: none;
+      } */
+
+      /* For Hidden */
+      #cont1 {
+        visibility: hidden;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Display Properties -->
+    <h1>Display Properties</h1>
+    <p>
+      <strong>Defination:</strong> Display properties are used to control how an
+      element is displayed on the web page. The most common display properties
+      include:
+    </p>
+    <div class="list-container">
+      <ul>
+        <li>
+          <code>block</code>: Displays the element as a block-level element.
+        </li>
+        <li>
+          <code>inline</code>: Displays the element as an inline-level element.
+        </li>
+        <li>
+          <code>inline-block</code>: Displays the element as an inline-level
+          block container.
+        </li>
+        <li><code>none</code>: Hides the element from the page.</li>
+
+        <li>
+          <code>visibility hidden</code>: Hides the element with element space
+          from the page.
+        </li>
+      </ul>
+    </div>
+    <p>Example: Dispaly- Inline(We don't set height and width)</p>
+    <div class="container">
+      <h2>hi</h2>
+    </div>
+    <p>Example: Display- Block</p>
+    <span class="click">Click Me</span>
+    <span class="click">Check me</span>
+
+    <p>Example: Display- Inline-block(We are set the height and width)</p>
+    <div id="box1" class="box">box1</div>
+    <div id="box2" class="box">box2</div>
+
+    <p>
+      Example: Display- none, Visibility- Hidden(None-Remove Element without any
+      spaces, Hidden-Remove element but space is created)
+    </p>
+    <div id="cont1" class="my-box">box1</div>
+    <div id="cont2" class="my-box">Box 2</div>
+  </body>
+</html>
