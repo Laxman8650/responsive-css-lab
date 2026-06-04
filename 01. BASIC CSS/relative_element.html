@@ -41,6 +41,37 @@
         text-decoration: dotted red underline;
         margin-right: 10px;
       }
+
+      #box1 {
+        height: 200px;
+        width: 200px;
+        background-color: red;
+        font-size: 25px;
+      }
+      #box2 {
+        height: 50%;
+        width: 50%;
+        background-color: black;
+        color: aliceblue;
+        font-size: 0.5em;
+      }
+      /* Default browser font or root element font * 1rem another rem value like 2rem*16px */
+      .box3 {
+        font-size: 2rem;
+      }
+      .viewport {
+        height: 50vh;
+        width: 50vw;
+        background-color: rgb(24, 169, 162);
+        color: white;
+        font-size: 2rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      h2 {
+        font-family: "Griffy", system-ui;
+      }
     </style>
   </head>
   <body>
@@ -66,5 +97,15 @@
         <li><span>%:</span>Relative to the parent element's size.</li>
       </ul>
     </div>
+    <h2>Examples:</h2>
+    <!-- Box size using % and font size using em-->
+    <div id="box1">
+      Mohit
+      <div id="box2">Mohit</div>
+    </div>
+    <!-- Relative font size using rem -->
+    <div class="box3">Mohit</div>
+    <!--  -->
+    <div class="viewport">Viewport height, viewport width</div>
   </body>
 </html>
