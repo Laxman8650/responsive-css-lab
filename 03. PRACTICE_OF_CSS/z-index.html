@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Z-Index</title>
+    <style>
+      .box {
+        height: 100px;
+        width: 100px;
+        background-color: rgb(20, 200, 30);
+        margin: 20px;
+        border-radius: 10px;
+        border: 2px solid black;
+      }
+      #box1 {
+        position: absolute;
+        top: 50px;
+        left: 70px;
+        z-index: 1;
+      }
+      #box2 {
+        position: absolute;
+        top: 80px;
+        left: 100px;
+        z-index: 2;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Z-Index is a CSS property that controls the stacking order of elements, with higher values appearing on top -->
+    <div id="box1" class="box">z-index1</div>
+    <div id="box2" class="box">z-index2</div>
+  </body>
+</html>
