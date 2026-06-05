@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Position Practice</title>
+    <style>
+      div {
+        height: 100px;
+        width: 100px;
+        background-color: rgb(20, 200, 30);
+        margin: 20px;
+        border-radius: 10px;
+        border: 2px solid black;
+      }
+      /* Static Position not allowed for top,left,bottom,right and z-index properties, */
+      #box1 {
+        position: static;
+        top: 50px;
+        left: 70px;
+      }
+      #box2 {
+        position: relative;
+        top: 50px;
+        left: 80px;
+      }
+      #box3 {
+        position: absolute;
+        top: 30px;
+        left: 120px;
+      }
+      #box4 {
+        position: fixed;
+        top: 60px;
+        left: 180px;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="box1">box1</div>
+    <div id="box2">box2</div>
+    <div id="box3">box3</div>
+    <div id="box4">box4</div>
+    <div>Box7</div>
+    <div>Box8</div>
+    <div>Box9</div>
+    <div>Box10</div>
+  </body>
+</html>
