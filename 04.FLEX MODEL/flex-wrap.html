@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flex Wrap</title>
+    <style>
+      .container {
+        height: 300px;
+        width: 300px;
+        background-color: aquamarine;
+        border: 2px solid;
+        display: flex;
+        flex-wrap: wrap-reverse;
+      }
+      .box {
+        height: 70px;
+        width: 60px;
+        border: 2px solid;
+        margin: 5px;
+      }
+      #box1 {
+        color: brown;
+      }
+      #box2 {
+        background-color: rgb(165, 149, 42);
+      }
+      #box3 {
+        background-color: rgb(173, 251, 94);
+      }
+      #box4 {
+        background-color: rgb(210, 128, 128);
+      }
+      #box5 {
+        background-color: rgb(126, 33, 83);
+      }
+      #box6 {
+        background-color: rgb(38, 215, 11);
+      }
+      #box7 {
+        background-color: rgb(138, 11, 11);
+      }
+      #box8 {
+        background-color: rgb(240, 213, 38);
+      }
+    </style>
+  </head>
+  <body>
+    <!-- flex-wrap- nowrap, wrap, wrap-reverse  -->
+    <div class="container">
+      <div id="box1" class="box">Item flex1</div>
+      <div id="box2" class="box">Item flex2</div>
+      <div id="box3" class="box">Item flex3</div>
+      <div id="box4" class="box">Item flex4</div>
+      <div id="box5" class="box">Item flex5</div>
+      <div id="box6" class="box">Item flex6</div>
+      <div id="box7" class="box">Item flex7</div>
+      <div id="box8" class="box">Item flex8</div>
+      <div id="box8" class="box">Item flex9</div>
+    </div>
+  </body>
+</html>
