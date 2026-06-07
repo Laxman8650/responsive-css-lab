@@ -43,20 +43,54 @@
       #box8 {
         background-color: rgb(240, 213, 38);
       }
+      .container2 {
+        margin-top: 15px;
+        height: 250px;
+        /* gap Proerties- Row Gap, Column Gap shorthand- gap: row-gap column-gap */
+        gap: 20px 5px;
+        width: 250px;
+        background-color: aquamarine;
+        border: 2px solid;
+        display: flex;
+        /*(Shorthand) Flex-flow- Flex Direction , Flex Wrap */
+        flex-flow: row wrap;
+        justify-content: space-between;
+        align-content: start;
+      }
+      .item {
+        height: 40px;
+        width: 40px;
+        border: 2px solid;
+        min-width: 0;
+        word-break: break-all;
+      }
     </style>
   </head>
   <body>
     <!-- flex-wrap- nowrap, wrap, wrap-reverse  -->
     <div class="container">
-      <div id="box1" class="box">Item flex1</div>
-      <div id="box2" class="box">Item flex2</div>
-      <div id="box3" class="box">Item flex3</div>
-      <div id="box4" class="box">Item flex4</div>
-      <div id="box5" class="box">Item flex5</div>
-      <div id="box6" class="box">Item flex6</div>
-      <div id="box7" class="box">Item flex7</div>
-      <div id="box8" class="box">Item flex8</div>
-      <div id="box8" class="box">Item flex9</div>
+      <div id="box1" class="box">Item flex 1</div>
+      <div id="box2" class="box">Item flex 2</div>
+      <div id="box3" class="box">Item flex 3</div>
+      <div id="box4" class="box">Item flex 4</div>
+      <div id="box5" class="box">Item flex 5</div>
+      <div id="box6" class="box">Item flex 6</div>
+      <div id="box7" class="box">Item flex 7</div>
+      <div id="box8" class="box">Item flex 8</div>
+      <div id="box8" class="box">Item flex 9</div>
+    </div>
+    <div class="container2">
+      <div class="item">Item 1</div>
+      <div class="item">Item 2</div>
+      <div class="item">Item 3</div>
+      <div class="item">Item 4</div>
+      <div class="item">Item 5</div>
+      <div class="item">Item 6</div>
+      <div class="item">Item 7</div>
+      <div class="item">Item 8</div>
+      <div class="item">Item 9</div>
+      <div class="item">Item 10</div>
+      <div class="item">Item 11</div>
     </div>
   </body>
 </html>
