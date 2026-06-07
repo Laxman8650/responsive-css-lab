@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flex Item properties</title>
+    <style>
+      .container {
+        height: 400px;
+        width: 450px;
+        gap: 10px;
+        background-color: darkcyan;
+        border: 2px solid #000;
+        display: flex;
+        align-items: center;
+      }
+      .item {
+        height: 100px;
+        width: 100px;
+        border: 2px solid #000;
+      }
+      #item3 {
+        background-color: rgb(255, 0, 0);
+        /* Order- Default value is 0, can be positive or negative */
+        order: -1;
+      }
+      #item2 {
+        background-color: rgb(0, 255, 0);
+        /* Flex Grow- Default value is 0, it takes up the extra space in the container */
+        order: 7;
+      }
+      #item2 {
+        flex-grow: 3;
+      }
+      #item4 {
+        background-color: rgb(0, 0, 255);
+        /* Flex Shrink- Default value is 1, it shrinks the item when the container is smaller than the item */
+        flex-shrink: 2;
+      }
+      #item5 {
+        background-color: rgb(255, 255, 0);
+        /* Align Self- Default value is auto, it overrides the align-items property for the specific item */
+        align-self: flex-end;
+      }
+      #item6 {
+        background-color: rgb(255, 0, 255);
+        align-self: start;
+      }
+    </style>
+  </head>
+  <body>
+    <!--Order, Flex Grow, Flex Shrink, Align Self  -->
+    <div class="container">
+      <div id="item1" class="item">Item1</div>
+      <div id="item2" class="item">Item2</div>
+      <div id="item3" class="item">Item3</div>
+      <div id="item4" class="item">Item4</div>
+      <div id="item5" class="item">Item5</div>
+      <div id="item6" class="item">Item6</div>
+    </div>
+  </body>
+</html>
