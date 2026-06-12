@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Photo</title>
+    <style>
+      #gallery {
+        width: 100%;
+        padding: 20px 0px;
+        background-color: #ccc;
+      }
+      #gallery h2 {
+        text-align: center;
+        padding-bottom: 20px;
+        font-family: cursive;
+        text-shadow: 0px 0px 5px #000;
+      }
+      .gallerymid {
+        width: 1320px;
+        margin: auto;
+        padding: 10px 20px;
+        /* height: 50px; */
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        border: 5px solid #000;
+        gap: 20px;
+      }
+      .galleryItem img {
+        width: 100%;
+        height: 100%;
+      }
+      .gallerymid .galleryItem:nth-child(1),
+      .gallerymid .galleryItem:nth-child(3),
+      .gallerymid .galleryItem:nth-child(5) {
+        grid-row: span 2;
+        box-shadow: 0px 0px 10px 5px #2d2d2d;
+      }
+      .gallerymid .galleryItem:nth-child(2) {
+        grid-column: span 2;
+        box-shadow: 0px 0px 10px 5px #2d2d2d;
+      }
+    </style>
+  </head>
+  <body>
+    <section id="gallery">
+      <h2>Masonry Gallery</h2>
+      <div class="gallerymid">
+        <div class="galleryItem">
+          <img src="https://picsum.photos/500/500?randoz=1" alt="Nature" />
+        </div>
+        <div class="galleryItem">
+          <img src="https://picsum.photos/500/500?randoz=2" alt="Nature" />
+        </div>
+        <div class="galleryItem">
+          <img src="https://picsum.photos/500/500?randoz=3" alt="Nature" />
+        </div>
+        <div class="galleryItem">
+          <img src="https://picsum.photos/500/500?randoz=4" alt="Nature" />
+        </div>
+        <div class="galleryItem">
+          <img src="https://picsum.photos/500/500?randoz=5" alt="Nature" />
+        </div>
+        <div class="galleryItem">
+          <img src="https://picsum.photos/500/500?randoz=6" alt="Nature" />
+        </div>
+        <div class="galleryItem">
+          <img src="https://picsum.photos/500/500?randoz=7" alt="Nature" />
+        </div>
+        <div class="galleryItem">
+          <img src="https://picsum.photos/500/500?randoz=8" alt="Nature" />
+        </div>
+        <div class="galleryItem">
+          <img src="https://picsum.photos/500/500?randoz=9" alt="Nature" />
+        </div>
+        <div class="galleryItem">
+          <img src="https://picsum.photos/500/500?randoz=10" alt="Nature" />
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
