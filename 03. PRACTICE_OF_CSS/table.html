@@ -4,42 +4,88 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Table</title>
+    <style>
+      /* Table styling */
+      table {
+        width: 100%;
+        border-collapse: collapse;
+        font-family: cursive;
+      }
+
+      th,
+      td {
+        padding: 12px;
+        text-align: center;
+        border-bottom: 1px solid #ddd;
+      }
+
+      /* Header background color */
+      th {
+        background-color: #4caf50;
+        color: white;
+        text-shadow: 8px 7px 5px black;
+      }
+
+      /* Zebra striping: Har dusri (even) row ka color badle */
+      tbody tr:nth-child(even) {
+        background-color: #242424;
+        color: white;
+      }
+
+      /* Optional: Mouse hover karne par row highlight hogi */
+      tr:nth-child(odd):hover {
+        background-color: #f8f404f5;
+      }
+      tr:nth-child(even):hover {
+        background-color: #b90bee;
+        color: black;
+      }
+    </style>
   </head>
   <body>
     <!-- Create a HTML table and add alternating row colors (zebra stripes) using of CSS -->
     <table border="1 solid black">
-      <caption style="text-align: center">
+      <caption
+        style="
+          text-align: center;
+          color: #040404;
+          font-weight: 800;
+          text-decoration: black dotted underline;
+          margin-bottom: 20px;
+        "
+      >
         Alternating Colour Table
       </caption>
+
       <tr>
         <th>Name</th>
-        <th style="color: white; background-color: black">Age</th>
-        <th>City</th>
+        <th>Age</th>
+        <th>Address</th>
       </tr>
       <tr>
-        <td style="color: white; background-color: black">Mohit</td>
+        <td>Mohit</td>
         <td>21</td>
-        <td style="color: white; background-color: black">Tharali</td>
+        <td>Tharali</td>
       </tr>
       <tr>
         <td>Jyoti</td>
-        <td style="color: white; background-color: black">20</td>
+        <td>20</td>
         <td>Narayanbagar</td>
       </tr>
       <tr>
-        <td style="color: white; background-color: black">Tanuja</td>
+        <td>Tanuja</td>
         <td>20</td>
-        <td style="color: white; background-color: black">Mall Bajwar</td>
+        <td>Mall Bajwar</td>
       </tr>
       <tr>
         <td>Sahil</td>
-        <td style="color: white; background-color: black">21</td>
+        <td>21</td>
         <td>Karanpryag</td>
       </tr>
       <tr>
-        <td style="color: white; background-color: black">Jhon Abhrahim</td>
+        <td>Jhon Abhrahim</td>
         <td>32</td>
-        <td style="color: white; background-color: black">Mumbai</td>
+        <td>Mumbai</td>
       </tr>
     </table>
   </body>
