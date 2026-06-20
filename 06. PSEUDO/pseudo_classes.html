@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pseudo Classes</title>
+    <style>
+      body {
+        background-color: #efe30043;
+      }
+      /* Direct Element Selector */
+      p {
+        font-size: 30px;
+        text-align: center;
+        text-decoration: dashed black underline;
+      }
+
+      /* Class or Element Selector */
+      /* .main p {
+        color: red;
+      } */
+
+      /* First child and nth child are order wise changing techniques */
+      /* p:first-child {
+        color: red;
+      } */
+
+      .main :nth-child(even) {
+        color: red;
+        text-align: center;
+        text-decoration: none;
+      }
+      .main :nth-child(odd) {
+        color: blue;
+        text-align: center;
+        text-decoration: none;
+      }
+      .main1 {
+        height: 200px;
+        width: 200px;
+        background: red;
+        border-radius: 4px;
+        box-shadow: 5px 2px 5px rgba(0, 0, 0, 0.5);
+        transition: all 0.3s ease;
+        text-align: center;
+        box-sizing: border-box;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: auto;
+      }
+      /* It's Hover Effect */
+      .main1:hover {
+        background: black;
+        color: white;
+        transition: 1s;
+      }
+
+      /* This is Focus effect (Note: Click on red Box) */
+      .main1:focus {
+        background-color: green;
+        outline: 2px dotted #ffffff;
+        outline-offset: -4px;
+        cursor: pointer;
+      }
+
+      /* This is active effect (Note: Hold Mouse On box) */
+      .main1:active {
+        background-color: orange;
+        transform: scale(0.95);
+        box-shadow: 5px 7px 6px rgba(0, 0, 0, 0.5);
+      }
+      body h3 {
+        color: rgb(17, 16, 16);
+        font-family: cursive;
+        text-decoration: rgb(228, 47, 47) dashed underline;
+        margin-left: 35px;
+        word-spacing: 3px;
+      }
+    </style>
+  </head>
+  <body>
+    <h3>
+      &bull;Defination: Pseudo Class use for change the specific state of
+      element(Such as: hover, active), Syntax:.class:hover{properties:value;},
+      use of samicolon(:).
+    </h3>
+    <div class="main">
+      <p>Mohit</p>
+      <p>Rahul</p>
+      <p>Summit</p>
+      <p>Karan</p>
+    </div>
+    <p>Hi My name is Laxman</p>
+    <div class="main1" tabindex="0"><b>My name is mohit</b></div>
+  </body>
+</html>
