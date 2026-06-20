@@ -1,0 +1,153 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home page</title>
+    <style>
+      * {
+        margin: 0px;
+        padding: 0px;
+        box-sizing: border-box;
+      }
+      .home {
+        height: 540px;
+        width: 1000px;
+        border: 2px solid green;
+        margin: 50px auto;
+        /* display: flex;
+        flex-wrap: wrap;
+        align-content: flex-start; */
+      }
+      .header {
+        width: 100%;
+        height: 100px;
+        background-color: fuchsia;
+      }
+      .header1 {
+        width: 20%;
+        height: 40px;
+        border-left: 1px solid;
+        float: left;
+        background-color: lavender;
+      }
+      .main {
+        height: 200px;
+        width: 1000px;
+      }
+
+      .containerlf {
+        height: 40px;
+        width: 250px;
+        border-bottom: 1px solid black;
+        background-color: red;
+      }
+      .row3 {
+        height: 200px;
+        width: 250px;
+        float: left;
+      }
+      .containerrt {
+        height: 200px;
+        width: 750px;
+        float: left;
+        background-color: black;
+      }
+      .main3 {
+        width: 100%;
+        background-color: #ff00cc;
+        text-align: center;
+      }
+      .main4 {
+        height: 110px;
+        width: 100%;
+        background-color: coral;
+        display: flex;
+        gap: 3px;
+      }
+      .imglf {
+        width: 330px;
+        background-color: darkgreen;
+      }
+      .imgct {
+        width: 330px;
+
+        background-color: black;
+      }
+      .imgrt {
+        width: 330px;
+      }
+      .footer {
+        height: 60px;
+        width: 100%;
+        background-color: black;
+      }
+      .footer p {
+        text-align: center;
+        color: white;
+        padding-top: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="home">
+      <div class="header">
+        <h2 style="text-align: center; padding-top: 20px">
+          Welcome to My Website
+        </h2>
+      </div>
+      <div class="header1" style="background-color: yellow">Home</div>
+      <div class="header1" style="background-color: #2df567">About</div>
+      <div class="header1">Gallery</div>
+      <div class="header1">Course</div>
+      <div class="header1">Contact US</div>
+      <div class="main">
+        <div class="row3">
+          <div class="containerlf">Home</div>
+          <div class="containerlf">About</div>
+          <div class="containerlf">Gallery</div>
+          <div class="containerlf">Course</div>
+          <div class="containerlf">Contact US</div>
+        </div>
+        <div class="containerrt">
+          <img
+            src="/assets/images/pro.jpg"
+            alt="Programming Image"
+            height="195"
+            width="747"
+          />
+        </div>
+      </div>
+      <div class="main3"><h2>Our Client</h2></div>
+      <div class="main4">
+        <div class="imglf">
+          <img
+            src="/assets/images/kot.webp"
+            height="110"
+            width="330"
+            alt="kotmahashu"
+          />
+        </div>
+        <div class="imgct">
+          <img
+            src="/assets/images/sm.jpg"
+            height="110"
+            width="330"
+            alt="Spiderman"
+          />
+        </div>
+        <div class="imgrt">
+          <img
+            src="/assets/images/mohit.jpg"
+            height="110"
+            width="330"
+            alt="Parrot Pic"
+          />
+        </div>
+      </div>
+      <div class="footer">
+        <p>Home|About|Courses|Contact US</p>
+      </div>
+    </div>
+  </body>
+</html>
