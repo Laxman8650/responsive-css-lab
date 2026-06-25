@@ -1,0 +1,13 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+h1 {
+  font-family: "Jost", sans-serif;
+  font-weight: bold;
+  text-shadow: 3px 0px 7px #2c2b2b;
+  color: whitesmoke;
+}
+section {
+}
