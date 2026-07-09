@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Blend Mode Example</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #ffffff;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .container {
+        position: relative;
+        width: 600px;
+        height: 400px;
+        background-color: #f0f0f0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        overflow: hidden;
+        border-radius: 12px;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+      }
+
+      /* Black Box jo aadhi screen cover karega */
+      .black-side {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 50%;
+        height: 100%;
+        background-color: #000000;
+      }
+
+      /* Magic Text: Jo blend mode use kar raha hai */
+      .blend-text {
+        font-size: 4rem;
+        font-weight: 900;
+        font-variant: small-caps;
+        /* text-transform: uppercase; */
+        letter-spacing: 2px;
+        z-index: 10;
+
+        /* Blend Mode Property */
+        color: #ffffff;
+        mix-blend-mode: exclusion;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <!-- Left side black hai, right side white hai -->
+      <div class="black-side"></div>
+
+      <!-- Yeh text dono sides ke upar overlap karega -->
+      <h1 class="blend-text">Creative</h1>
+    </div>
+  </body>
+</html>
