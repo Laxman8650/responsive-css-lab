@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Moon</title>
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        background-color: #000000;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+      }
+
+      .laptop-moon {
+        width: 30vw;
+        height: 60vh;
+        border-radius: 50%;
+
+        background: radial-gradient(
+          circle at 65% 35%,
+          #eeecec 0%,
+          #e1e4e6 30%,
+          #c7ccd1 65%,
+          #505356 90%,
+          #0a0b0d 100%
+        );
+
+        box-shadow:
+          0 0 80px rgba(255, 255, 255, 0.29),
+          0 0 30px rgba(255, 255, 255, 0.1),
+          inset -15px -15px 40px rgba(0, 0, 0, 0.9);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="laptop-moon"></div>
+  </body>
+</html>

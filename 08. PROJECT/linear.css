@@ -1,0 +1,33 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+.section1 {
+  height: 100vh;
+  /* width: auto; */
+  /* Linear gradient with direction */
+  /* background-image: linear-gradient(to right, red, yellow, black, green); */
+
+  /* Linear gradient with diagonal direction */
+  /* background-image: linear-gradient(
+    to right top,
+    rgba(255, 0, 0, 0.5),
+    rgba(255, 255, 0, 0.5),
+    rgba(0, 0, 0, 0.5),
+    rgba(0, 128, 0, 0.5)
+  ); */
+
+  /* overlay two semi-transparent colors on top of a background image */
+  /* background-image:
+    linear-gradient(rgba(238, 174, 202, 0.3), rgba(148, 187, 233, 0.3)),
+    url("https://object.pixocial.com/pixocial/bqnqy3h6i7rlj0j70lqq71dt.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 100%; */
+
+  /* repeating linear gradient */
+  background-image: repeating-linear-gradient(125deg, #edeeef, red 45px);
+  box-shadow: 0 0 15px inset rgba(0, 0, 0, 1);
+}
