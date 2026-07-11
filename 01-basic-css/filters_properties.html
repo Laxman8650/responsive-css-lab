@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Filter Properties</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      /* .container {
+        width: 60%;
+        margin: 40px auto;
+      } */
+      .container img {
+        display: block;
+        height: 30rem;
+        width: 60%;
+        margin: 2.6rem auto;
+
+        /* This is filters effect */
+        filter: grayscale(1);
+        /* filter: opacity(0.5); */
+        /* filter: contrast(120%); */
+        /* filter: brightness(60%); */
+        /* filter: saturate(4); */
+        /* filter: invert(); */
+      }
+      .container p {
+        font-family: cursive;
+        font-weight: 900;
+        font-size: 1.4rem;
+        padding: 2rem;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <p>
+        Filter effect: The css filter property is used to add visual effects to
+        elements, especially images.
+      </p>
+      <img src="/assets/images/flowers.png" alt="Flowers" />
+    </div>
+  </body>
+</html>
