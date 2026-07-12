@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Combinators</title>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Griffy&family=Nabla&family=Oswald:wght@200..700&display=swap");
+
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: oswald;
+      }
+      .container2 {
+        text-align: center;
+        margin: 0% auto;
+        padding: 1rem;
+      }
+      /* Descendant combinator */
+      .container2 p {
+        font-size: 0.8rem;
+        font-weight: bold;
+      }
+      .container2 ol {
+        color: black;
+      }
+      /* child combinator */
+      .container2 > ul {
+        list-style-position: inside;
+        color: red;
+        font-size: 1.2rem;
+      }
+      /* adjacent sibling combinator */
+      .container2 p + li {
+        color: blue;
+        font-size: 1.1rem;
+      }
+      /* general sibling combinator */
+      .container2 p ~ li {
+        color: green;
+        font-size: 1.1rem;
+      }
+      .container1 {
+        height: 60vh;
+        background: linear-gradient(to right, #000, #f55d5d);
+        color: white;
+        box-sizing: border-box;
+        box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
+        padding-top: 10px;
+        margin-bottom: 20px;
+      }
+      .container1 h2 {
+        text-align: center;
+        /* avoid margin collapse causing gap above the black background */
+        font-size: 1.9rem;
+        text-decoration: 2px underline dotted;
+        text-shadow: 2px 2px 9px rgba(0, 0, 0, 0.7);
+        padding-bottom: 35px;
+      }
+      .container1 h2 + p {
+        text-align: center;
+        /* avoid margin collapse causing gap above the black background */
+        font-size: 1.3rem;
+        color: rgba(231, 251, 9, 0.963);
+        padding-bottom: 35px;
+      }
+      .container1 ul {
+        margin-left: 30px;
+        font-size: 1.3rem;
+        list-style-position: inside;
+        margin-bottom: 30px;
+        color: rgba(56, 246, 9, 0.777);
+      }
+      .container1 p + p {
+        margin-left: 25px;
+        /* avoid margin collapse causing gap above the black background */
+        font-size: 1.3rem;
+        color: rgba(231, 251, 9, 0.963);
+        padding-bottom: 35px;
+      }
+    </style>
+  </head>
+  <body>
+    <section class="container1">
+      <h2>Combinators</h2>
+      <p>
+        Combinators are used to select elements based on their relationship to
+        other elements.
+      </p>
+      <p>There are four types of combinators in CSS:</p>
+
+      <ul>
+        <li>Descendant combinator (space)</li>
+        <li>Child combinator (>)</li>
+        <li>Adjacent sibling combinator (+)</li>
+        <li>General sibling combinator (~)</li>
+      </ul>
+    </section>
+    <section class="container2">
+      <ul>
+        <p>Basic</p>
+        <li>Mohit</li>
+        <li>
+          CSS
+          <ol>
+            <li>Rahul</li>
+            <ul>
+              <li>Friend</li>
+              <li>Worker</li>
+            </ul>
+            <li>Best Friend</li>
+          </ol>
+        </li>
+        <li>Like</li>
+        <p>I am best</p>
+        <li>Subscribe</li>
+      </ul>
+      <ul>
+        <li style="list-style-position: inside">Suuuuuuuuuuuuu!</li>
+      </ul>
+    </section>
+  </body>
+</html>
