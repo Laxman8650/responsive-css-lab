@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>List Properties</title>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Boogaloo&family=Griffy&family=Jost:ital,wght@0,100..900;1,100..900&family=Joti+One&family=Kranky&family=Nabla&family=Oswald:wght@200..700&family=Playwrite+AU+QLD:wght@100..400&display=swap");
+
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: jost;
+      }
+      .container1 {
+        height: 60vh;
+        background-color: black;
+        color: white;
+        box-sizing: border-box;
+        padding-top: 10px;
+        margin-bottom: 20px;
+      }
+      .container1 p {
+        text-align: center;
+        /* avoid margin collapse causing gap above the black background */
+        font-size: 1.3rem;
+        padding-bottom: 35px;
+      }
+
+      .container1 h1 {
+        text-align: center;
+        font-size: 2.5rem;
+        padding-bottom: 20px;
+        text-decoration: 2px white wavy underline;
+      }
+      .container1 h2 {
+        color: rgb(255, 0, 225);
+        text-align: center;
+        font-size: 2rem;
+        padding-bottom: 25px;
+      }
+
+      .container1 ul {
+        text-align: center;
+        font-size: 1.3rem;
+        list-style-position: inside;
+        margin-bottom: 30px;
+        color: rgba(246, 167, 9, 0.777);
+      }
+
+      .container2 ul {
+        list-style-type: lower-alpha;
+        list-style-position: inside;
+
+        /* list-style-image: url(); */
+      }
+      .container2 {
+        height: 375px;
+        width: 40%;
+        border: 2px solid black;
+        border-radius: 10px;
+        margin: 0% auto;
+        background-color: #57fc04b0;
+        margin-bottom: 20px;
+        box-shadow: rgba(0, 0, 0, 0.8) 0px 22px 80px 4px;
+      }
+      .container2 ul li {
+        padding: 10px;
+        margin-top: 12px;
+        margin-left: 20px;
+        margin-right: 10px;
+        border: 2.5px solid black;
+      }
+    </style>
+  </head>
+  <body>
+    <section class="container1">
+      <h1>List Properties</h1>
+      <p>
+        List property: Css list properties allow you to control the look and
+        layout of html lists(ul or ol). They let you change the bullet style,
+        custom images as bullets, and more.
+      </p>
+      <h2>Types of List Properties</h2>
+      <ul>
+        <li>list-style-type</li>
+        <li>list-style-image</li>
+        <li>list-style-position</li>
+        <li>list-style</li>
+      </ul>
+    </section>
+    <section class="container2">
+      <ul>
+        <li>Fruits</li>
+        <li>
+          Vegetables
+          <ul>
+            <li>Carrot</li>
+            <li>Potato</li>
+            <li>Onion</li>
+          </ul>
+        </li>
+        <li>Dairy Products</li>
+      </ul>
+    </section>
+  </body>
+</html>
