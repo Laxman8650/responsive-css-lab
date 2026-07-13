@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Display Properties</title>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Boogaloo&family=Griffy&family=Jost:ital,wght@0,100..900;1,100..900&family=Joti+One&family=Kranky&family=Nabla&family=Oswald:wght@200..700&family=Playwrite+AU+QLD:wght@100..400&display=swap");
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      h1 {
+        text-align: center;
+        font-family: jost;
+        font-size: 3rem;
+        font-variant: small-caps;
+        margin: 2rem 0;
+        text-decoration: 2px underline dotted black;
+      }
+      p {
+        font-family: oswald;
+        font-size: 1.3rem;
+        font-weight: 500;
+        height: fit-content;
+        /* display: inline; */
+        width: 90%;
+        padding: 20px;
+        margin: 20px 10px;
+        background: linear-gradient(
+          to right,
+          #e2dfe0f9,
+          #e3e2e1,
+          #df9500,
+          #c0c100,
+          #91e74b
+        );
+        border-radius: 10px;
+        border: 1px solid rgb(71, 70, 70);
+        box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
+        text-shadow: 0px 5px 10px #00000079;
+      }
+      a {
+        font-family: jost;
+        font-variant: small-caps;
+        color: black;
+        font-weight: 600;
+        text-decoration: none;
+
+        /* Dislay Inline-Block */
+        display: inline-block;
+        text-align: center;
+        height: 50px;
+        width: 100px;
+        margin: 0 100px;
+        box-shadow: rgba(0, 0, 0, 0.75) 0px 22px 70px 4px;
+        border: 1px solid rgb(139, 139, 139);
+        border-radius: 2px;
+        padding: 10px 10px;
+        background-image: linear-gradient(
+          to right,
+          #9e57e1,
+          #6c82f3,
+          #519ef0,
+          #6ab3e2,
+          #9ac3d3
+        );
+      }
+      body > p:nth-child(2),
+      body > a:nth-child(6) {
+        /* Display None - Remove the element without whitesapce */
+        /* display: none; */
+        background: linear-gradient(
+          to right,
+          #e9ea38,
+          #cce534,
+          #addf34,
+          #8ed837,
+          #6bd13d,
+          #55d354,
+          #39d569,
+          #00d67c,
+          #00e09e,
+          #02eabe,
+          #38f3d9,
+          #5ffbf1
+        );
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Display Properties -->
+    <h1>Display Properties in Css</h1>
+    <p>Morning Coffee brings instant Energy.</p>
+    <p>Fresh mountain air relaxes the mind.</p>
+    <p>Use social media with limits.</p>
+    <a href="#">Next</a>
+    <a href="#">Proceed</a>
+    <a href="#">Continue</a>
+  </body>
+</html>
