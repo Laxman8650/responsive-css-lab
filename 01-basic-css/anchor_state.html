@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Anchor State</title>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Boogaloo&family=Griffy&family=Jost:ital,wght@0,100..900;1,100..900&family=Joti+One&family=Kranky&family=Nabla&family=Oswald:wght@200..700&family=Playwrite+AU+QLD:wght@100..400&display=swap");
+
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body {
+        height: 100vh;
+        width: 100%;
+        background-color: black;
+        color: white;
+        display: flex;
+        justify-content: flex-start;
+      }
+      .container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+      .container2 img {
+        height: 600px;
+        margin-right: 60px;
+        width: auto;
+        filter: drop-shadow(10px 350px 92px #faf9f9);
+      }
+      h1 {
+        font-family: Jost;
+        font-size: 2.5rem;
+        font-variant: small-caps;
+        margin-bottom: 20px;
+      }
+      h1:hover {
+        color: yellowgreen;
+      }
+      p {
+        font-family: jost;
+        max-width: 60%;
+        margin: 0 auto;
+        font-size: 1.3rem;
+      }
+      .container2 {
+        display: flex;
+        justify-content: center;
+      }
+      .container span {
+        color: rgb(246, 244, 244);
+        font-family: jost;
+        text-shadow: 4px 4px 4px black;
+        font-weight: 600;
+        font-size: 1.2rem;
+        display: inline-block;
+        padding-top: 10px;
+        text-align: center;
+        margin-top: 40px;
+        margin-right: 40%;
+        height: 50px;
+        width: 150px;
+        border: none;
+        border-radius: 5px;
+        background-color: rgb(255, 143, 5);
+        box-shadow:
+          rgba(251, 250, 250, 0.25) 10px 31px 55px,
+          rgba(251, 249, 249, 0.12) 0px -12px 30px,
+          rgba(249, 248, 248, 0.12) 0px 4px 6px,
+          rgba(254, 250, 250, 0.17) 0px 12px 13px,
+          rgba(247, 246, 246, 0.09) 0px -3px 5px;
+      }
+      .container span > a {
+        text-decoration: none;
+        /* display: block; */
+        /* padding: 20px; */
+      }
+
+      /* Anchor State Properties */
+      .container a:link {
+        color: white;
+      }
+      .container a:visited {
+        color: rgb(253, 241, 5);
+      }
+      .container a:hover {
+        color: rgb(62, 244, 6);
+      }
+      .container a:active {
+        color: rgb(246, 9, 227);
+      }
+    </style>
+  </head>
+  <body>
+    <section class="container">
+      <h1>Learning Css</h1>
+      <p>
+        I am currently learning CSS, and I'm having a lot of fun with it.
+        Designing web pages with styles and layouts is amazing, and I am really
+        looking forward to learning more interesting and advanced concepts soon.
+      </p>
+      <span><a href="https://youtube.com" target="_blank">Watch Now</a></span>
+    </section>
+    <section class="container2">
+      <img src="/assets/images/luffy.png" alt="luffy img" />
+    </section>
+  </body>
+</html>
