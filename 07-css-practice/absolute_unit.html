@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rel_Absolute Unit</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      h2 {
+        font-family: cursive;
+        font-size: 2rem;
+        font-weight: 600;
+        text-align: center;
+        margin-bottom: 10px;
+      }
+      .container {
+        height: 800px;
+        width: 1000px;
+        left: 25%;
+        top: 50px;
+        background: radial-gradient(
+          circle,
+          rgb(1, 20, 63) 0%,
+          rgba(9, 67, 121, 1) 35%,
+          rgba(0, 221, 255, 1) 100%
+        );
+        position: relative;
+        border-radius: 10px;
+        box-shadow: rgba(0, 0, 0, 0.4) 0px 30px 90px;
+      }
+      .child {
+        text-align: center;
+        padding-top: 60px;
+        font-family: cursive;
+        font-size: 1.7rem;
+        font-variant: small-caps;
+        color: white;
+        height: 150px;
+        width: 150px;
+        background: linear-gradient(
+          175deg,
+          rgba(247, 109, 109, 1) 0%,
+          rgba(79, 19, 19, 1) 65%,
+          rgba(181, 99, 11, 1) 100%
+        );
+        border-radius: 5px;
+        box-shadow:
+          rgba(0, 0, 0, 0.25) 0px 54px 55px,
+          rgba(0, 0, 0, 0.12) 0px -12px 30px,
+          rgba(0, 0, 0, 0.12) 0px 4px 6px,
+          rgba(0, 0, 0, 0.17) 0px 12px 13px,
+          rgba(0, 0, 0, 0.09) 0px -3px 5px;
+        /* Position Absolute */
+        position: absolute;
+      }
+      .child-2 {
+        top: 0;
+        right: 0;
+      }
+      .child-3 {
+        bottom: 0;
+        right: 0;
+      }
+      .child-4 {
+        bottom: 0;
+        left: 0;
+      }
+      .child-1 {
+        left: 26.5625rem;
+        bottom: 20.3125rem;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Relative Absolute unit -->
+    <h2>Relative (Absolute) Unit</h2>
+    <div class="container">
+      <div class="child child-1">child1</div>
+      <div class="child child-2">child2</div>
+      <div class="child child-3">child3</div>
+      <div class="child child-4">child4</div>
+      <div class="child child-5">child5</div>
+    </div>
+  </body>
+</html>
