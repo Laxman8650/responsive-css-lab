@@ -45,4 +45,3 @@ This repository is organized into specific learning modules:
 - **Code Editor:** Visual Studio Code
 - **Version Control:** Git & GitHub
 - **Local Server:** Live Server Extension (Port: 5500)
-
