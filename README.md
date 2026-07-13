@@ -3,7 +3,16 @@
 Welcome to my **CSS Course** practice repository! I am currently learning web development and using this project to practice everything from foundational concepts to layout positioning.
 
 ---
+### 📂 About This Repository
 
+This project is structured chronologically to reflect my learning process. To understand my coding approach, please note:
+
+> [!NOTE]
+> **Core Styling Approach:**  
+> * **Phase 1 (Basics & Experiments):** Initially, I used **Internal CSS** within HTML files for rapid prototyping and quick conceptual testing.
+> * **Phase 2 (Advanced & Projects):** As I progressed to complex layouts, I transitioned to **External CSS** to ensure clean, modular, and industry-standard code structures.
+
+---
 ## 📂 Project Structure & Topics Covered
 
 This repository is organized into specific learning modules:
