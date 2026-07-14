@@ -64,6 +64,8 @@ a {
 }
 .section2 img {
   height: 50%;
+  position: sticky;
+  top: 1rem;
   filter: drop-shadow(-7px -6px 20px #000000);
 }
 .section2 {
@@ -80,15 +82,19 @@ a {
   );
 }
 .section2 a {
-  position: sticky;
   font-size: 2.5rem;
   font-variant: small-caps;
   background-color: white;
   border-radius: 10px;
+  position: sticky;
+  top: 1rem; /* required for sticky to take effect */
+  /* z-index: 10; */
+  display: inline-block;
   box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
 }
 .section3 {
   position: sticky;
+  top: 0; /* ensure the section can stick when scrolling */
   height: 100vh;
   width: 100%;
   display: flex;
