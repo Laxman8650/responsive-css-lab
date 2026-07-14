@@ -4,6 +4,7 @@
   box-sizing: border-box;
 }
 body {
+  background-color: #0d0b0b;
   font-family: cursive;
   color: white;
 }
@@ -22,6 +23,14 @@ body {
   ); /* Chrome 10-25, Safari 5.1-6 */
   background: linear-gradient(to bottom, #2d9ee0, #2f80ed, #091e3a);
   box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+}
+.main-container p {
+  text-align: center;
+  color: rgb(230, 251, 4);
+  font-size: 2rem;
+  font-variant: small-caps;
+  text-decoration: 2px underline;
+  text-shadow: -2px 2px 7px rgb(56, 55, 55);
 }
 
 .child {
