@@ -37,31 +37,37 @@ h1 {
   position: relative;
 }
 p {
-  font-size: 1.1rem;
+  font-size: 1.2rem;
 }
-.container1 h1::before {
+h1::before {
   content: "Laxman Singh ";
   color: azure;
   letter-spacing: 8px;
-  font-size: 1.1rem;
+  font-size: 1.15rem;
   font-weight: 400;
   position: absolute;
-  top: -10px;
+  top: -11px;
   /* bottom: 0; */
   left: 6.4%;
 }
 
 h1::after {
-  content: "\e6a2";
-  font-family: "Font Awesome 6 Free";
+  content: " \f13c";
+  font-family: "Font Awesome 6 Brands";
+  font-weight: 900;
+  color: blue;
+  font-size: 3rem;
 }
 
 h1::first-letter {
   font-size: 2.8rem;
+  color: blue;
 }
 p::first-letter {
-  font-size: 2rem;
-  color: darkmagenta;
+  font-size: 2.5rem;
+  font-weight: 600;
+  font-family: cursive;
+  color: rgb(107, 207, 13);
 }
 p::first-line {
   text-decoration: underline;
