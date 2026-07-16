@@ -1,0 +1,59 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Jost", sans-serif;
+  font-optical-sizing: auto;
+  background-color: black;
+  color: aliceblue;
+}
+.container {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  /* flex-direction: column; */
+}
+.container1 {
+  width: 55%;
+  margin-left: 4.5rem;
+  text-align: start;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+h1 {
+  font-size: 2.5rem;
+  font-variant: small-caps;
+  letter-spacing: 4px;
+  color: bisque;
+  align-self: start;
+  margin-bottom: 15px;
+}
+p {
+  font-size: 1.1rem;
+}
+h1::before {
+  content: "Laxman Singh ";
+  color: azure;
+  letter-spacing: 8px;
+  font-size: 1.1rem;
+  position: absolute;
+  top: 31%;
+  left: 6.4%;
+}
+h1::first-letter {
+  font-size: 2.8rem;
+}
+
+.container2 {
+  width: 45%;
+  margin-left: 6rem;
+}
+.container2 img {
+  height: 650px;
+}
