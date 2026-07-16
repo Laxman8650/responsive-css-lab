@@ -21,6 +21,7 @@ body {
   width: 55%;
   margin-left: 4.5rem;
   text-align: start;
+  /* position: relative; */
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -33,23 +34,39 @@ h1 {
   color: bisque;
   align-self: start;
   margin-bottom: 15px;
+  position: relative;
 }
 p {
   font-size: 1.1rem;
 }
-h1::before {
+.container1 h1::before {
   content: "Laxman Singh ";
   color: azure;
   letter-spacing: 8px;
   font-size: 1.1rem;
+  font-weight: 400;
   position: absolute;
-  top: 31%;
+  top: -10px;
+  /* bottom: 0; */
   left: 6.4%;
 }
+
+h1::after {
+  content: "\e6a2";
+  font-family: "Font Awesome 6 Free";
+}
+
 h1::first-letter {
   font-size: 2.8rem;
 }
-
+p::first-letter {
+  font-size: 2rem;
+  color: darkmagenta;
+}
+p::first-line {
+  text-decoration: underline;
+  /* color: darkmagenta; */
+}
 .container2 {
   width: 45%;
   margin-left: 6rem;
