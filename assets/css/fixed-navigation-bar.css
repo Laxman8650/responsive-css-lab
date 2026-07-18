@@ -1,0 +1,106 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Source Sans 3", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-variant: small-caps;
+  font-style: normal;
+}
+.navbar {
+  height: 4rem;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  /* border: 1px solid black; */
+  box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+  /* position Fixed */
+  position: fixed;
+}
+.navbar img {
+  /* width: 3rem; */
+  height: 2.5rem;
+}
+.navbar a,
+a {
+  font-size: 1.7rem;
+  color: black;
+  text-decoration: none;
+  text-shadow: 2px 2px 13px rgba(158, 150, 147, 0.98);
+  padding: 0 1rem;
+  margin-left: 0;
+}
+.navbar a:link {
+  color: white;
+}
+.navbar a:visited {
+  color: rgb(29, 140, 29);
+}
+.navbar a:hover {
+  color: rgb(244, 6, 185);
+}
+.section1 {
+  height: 100vh;
+  width: 100%;
+  font-size: 2.7rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(
+    180deg,
+    rgba(250, 250, 250, 1) 12%,
+    rgba(255, 0, 0, 1) 56%,
+    rgba(255, 177, 8, 1) 100%
+  );
+}
+.section1:hover {
+  color: white;
+  transition: 1.6s;
+}
+.section2 img {
+  height: 50%;
+  position: sticky;
+  top: 1rem;
+  filter: drop-shadow(-7px -6px 20px #000000);
+}
+.section2 {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(
+    181deg,
+    rgba(63, 94, 251, 1) 0%,
+    rgba(252, 70, 107, 1) 100%
+  );
+}
+.section2 a {
+  font-size: 2.5rem;
+  font-variant: small-caps;
+  background-color: white;
+  border-radius: 10px;
+  position: sticky;
+  top: 1rem; /* required for sticky to take effect */
+  /* z-index: 10; */
+  display: inline-block;
+  box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+}
+.section3 {
+  position: sticky;
+  top: 0; /* ensure the section can stick when scrolling */
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 3rem;
+  /* text-align: center; */
+  background: linear-gradient(to top right, #000000, #ffff);
+}
