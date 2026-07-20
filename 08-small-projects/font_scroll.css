@@ -1,0 +1,83 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  min-height: 100vh;
+  width: 100%;
+  background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+  color: white;
+  display: flex;
+  justify-content: center;
+  padding-top: 40px;
+  background-size: 300% 300%;
+  animation: gradientBG 8s ease infinite;
+}
+
+@keyframes gradientBG {
+  0% {
+    background-position: left;
+  }
+
+  50% {
+    background-position: right;
+  }
+
+  100% {
+    background-position: left;
+  }
+}
+.fContainer {
+  width: 70%;
+  height: 10%;
+  /* margin-top: 10px; */
+  padding: 10px;
+  font-size: 2.1rem;
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(12px);
+  border-radius: 10px;
+  overflow: hidden;
+  animation: boxShadow 5s cubic-bezier(0.04, 0.18, 0.89, 0.59) infinite;
+}
+@keyframes boxShadow {
+  0% {
+    box-shadow: 0 0 5px cyan;
+  }
+  50% {
+    box-shadow:
+      0 0 20px cyan,
+      0 0 40px cyan,
+      0 0 60px cyan;
+  }
+  100% {
+    box-shadow: 0 0 5px cyan;
+  }
+}
+
+p {
+  text-align: start;
+  font-family: "Rubik Distressed", system-ui;
+  text-wrap-mode: nowrap;
+  color: #f1f3f3;
+  text-shadow: 0 0 40px #101313;
+  animation: fontMoving 5s cubic-bezier(0.04, 0.18, 0.89, 0.59) infinite 0.9s;
+  /* animation-direction: alternate-reverse; */
+}
+@keyframes fontMoving {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(-120%);
+    /* color: rgb(10, 9, 8); */
+    letter-spacing: 6px;
+  }
+}
+.fContainer:hover {
+  animation-play-state: paused;
+}
+.fContainer:hover p {
+  animation-play-state: paused;
+}
