@@ -1,0 +1,105 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.animation {
+  height: 100vh;
+  width: 100%;
+  background-image: url("/assets/images/run_bg.png");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  position: relative;
+  overflow: hidden;
+}
+.animation::before {
+  content: "";
+  position: absolute;
+  bottom: 22%;
+  left: 0;
+  width: 120%;
+  height: 8px;
+  background: repeating-linear-gradient(
+    to right,
+    white 0 100px,
+    transparent 50px 180px
+  );
+  filter: drop-shadow(0 0 2px rgba(255, 255, 255, 0.4));
+  animation: roadLine 0.7s linear infinite;
+}
+@keyframes roadLine {
+  from {
+    background-position: 0 0;
+  }
+
+  to {
+    background-position: -180px 0;
+  }
+}
+.run {
+  width: 100%;
+}
+.run img {
+  height: 100px;
+  min-height: 200px;
+  filter: drop-shadow(0px 100px 77px rgba(0, 0, 0, 1));
+  position: absolute;
+  bottom: 18%;
+  left: -7%;
+  animation: runing 3s linear infinite;
+  animation-play-state: running;
+}
+@keyframes runing {
+  from {
+    transform: translate(-0px);
+  }
+  to {
+    transform: translate(110vw);
+  }
+}
+img:hover {
+  animation-play-state: paused;
+}
+
+.birdFly > img {
+  width: 5%;
+  position: absolute;
+  top: 10%;
+  z-index: 1;
+  filter: drop-shadow(0px 0px 3px black);
+  /* overflow: hidden; */
+  animation: birdflyy 5s ease-in infinite;
+}
+@keyframes birdflyy {
+  from {
+    transform: translateX(-5vw);
+  }
+
+  to {
+    transform: translateX(110vw);
+  }
+}
+.sun img {
+  width: 13%;
+  position: absolute;
+  /* overflow: hidden; */
+  left: -20%;
+  top: 40%;
+  opacity: 0;
+  animation: sunrise 6s ease-in-out forwards;
+}
+@keyframes sunrise {
+  0% {
+    transform: translate(0, 0) scale(0.5);
+    opacity: 0;
+  }
+
+  20% {
+    opacity: 0.6;
+  }
+
+  100% {
+    transform: translate(60vw, -30vh) scale(1);
+    opacity: 1;
+  }
+}
