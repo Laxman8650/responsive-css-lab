@@ -12,6 +12,7 @@
   position: relative;
   overflow: hidden;
 }
+/*Create white lines  */
 .animation::before {
   content: "";
   position: absolute;
@@ -36,6 +37,7 @@
     background-position: -180px 0;
   }
 }
+/* Runing Animation  */
 .run {
   width: 100%;
 }
@@ -60,7 +62,7 @@
 img:hover {
   animation-play-state: paused;
 }
-
+/* Bird fly animation */
 .birdFly > img {
   width: 5%;
   position: absolute;
@@ -79,6 +81,7 @@ img:hover {
     transform: translateX(110vw);
   }
 }
+/* Sunrise animation */
 .sun img {
   width: 13%;
   position: absolute;
