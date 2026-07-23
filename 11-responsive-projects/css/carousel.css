@@ -23,6 +23,7 @@ body {
   box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
   animation: carousel 14s ease-in-out infinite;
 }
+/* Carousel Effect  */
 @keyframes carousel {
   20% {
     background-image: url("/assets/images/joker.jpg");
@@ -40,6 +41,7 @@ body {
     background-image: url("/assets/images/kartoos.jpg");
   }
 }
+/* This container use for containt h2 and p tag */
 .overlay {
   position: absolute;
   left: 0;
@@ -67,6 +69,7 @@ body {
   font-size: 1rem;
 }
 
+/* For Navigation Dots */
 .dots {
   position: absolute;
   bottom: 15px;
@@ -89,6 +92,7 @@ body {
   background: #fff;
   transform: scale(1.2);
 }
+/* Media Query for responsive layout */
 @media (max-width: 600px) {
   .overlay h2 {
     font-size: 1.3rem;
